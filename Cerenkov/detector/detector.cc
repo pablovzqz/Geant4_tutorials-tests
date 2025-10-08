@@ -19,7 +19,6 @@ MySensitiveDetector::MySensitiveDetector(const G4String& name):
     }
 
     file.close();
-    quEff->SetSpline(false);
 }
 
 MySensitiveDetector::~MySensitiveDetector()

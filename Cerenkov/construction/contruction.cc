@@ -9,8 +9,8 @@ MyDetectorConstruction::MyDetectorConstruction()
     fMessenger->DeclareProperty("nCols", Ncols, "Number of columns of the detector array");
     fMessenger->DeclareProperty("nRows", Nrows, "Number of rows of the detector array");
 
-    Ncols = 100;
-    Nrows = 100;
+    Ncols = 10;
+    Nrows = 10;
 
     defineMaterial();
 }
@@ -64,6 +64,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     LogicWorld = new G4LogicalVolume(solidWorld, worldMat, "LogicWorld");
     LogicRadiator = new G4LogicalVolume(solidRadiator, Aerogel, "LogicRadiator");
     
+    fScoringVolume = LogicRadiator; // Definir el volumen de puntuación para el análisis posterior
+
     PhysWorld = new G4PVPlacement(0, G4ThreeVector(0,0,0), LogicWorld, "PhysWorld", 0, false, 0, true);
     PhysRadiator = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.25 * m), LogicRadiator, "PhysRadiator", LogicWorld, false, 0, true);
     

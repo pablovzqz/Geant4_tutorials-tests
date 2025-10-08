@@ -214,6 +214,30 @@ Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.cc.s
+
 Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o
 
@@ -286,6 +310,30 @@ Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.s
+
 sim.o: sim.cc.o
 .PHONY : sim.o
 
@@ -329,6 +377,9 @@ help:
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/event/event.s"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.s"
@@ -338,6 +389,9 @@ help:
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.s"
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"

@@ -21,7 +21,10 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction {
         MyDetectorConstruction();
         ~MyDetectorConstruction();
 
+        G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }
+
         virtual G4VPhysicalVolume *Construct();
+
     private:
         G4LogicalVolume* logicDetector;
         virtual void ConstructSDandField();
@@ -33,6 +36,7 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction {
         G4int Ncols, Nrows;
 
         G4GenericMessenger *fMessenger;
+        G4LogicalVolume *fScoringVolume;
     
         G4Material *SiO2, *H2O, *Aerogel, *worldMat;
         G4Element *C;

@@ -1,29 +1,83 @@
-CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o: \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserActionInitialization.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../generator/generator.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleGun.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/globals.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ios.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4Types.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4GlobalConfig.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/complex \
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc.o: \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/stepping.cc \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/../stepping/stepping.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4UserSteppingAction.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Step.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdlib \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__verbose_abort \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__availability \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/cdefs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_symbol_aliasing.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/i386/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cmath \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/promote.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/integral_constant.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/is_same.h \
@@ -146,67 +200,11 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/type_identity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uint64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_intptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_u_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uintptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_uintmax_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__undef_macros \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_pid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_id_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/appleapiopts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/machine/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/mach/i386/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigaltstack.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ucontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_size_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_uid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/i386/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/i386/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/alloca.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_ct_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_wchar_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_null.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_dev_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_mode_t.h \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ios.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Types.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4GlobalConfig.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/complex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__mbstate_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h \
@@ -234,7 +232,6 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/runetype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdlib \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/addressof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
@@ -742,53 +739,20 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Users/pablovazquez/geant4-install/include/Geant4/tls.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
+  /Users/pablovazquez/geant4-install/include/Geant4/globals.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4String.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4String.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/templates.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4Exception.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ExceptionSeverity.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4EnvironmentUtils.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VPrimaryGenerator.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ThreeVector.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Utility/defs.h \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PDefManager.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4AutoLock.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4Threading.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
-  /Users/pablovazquez/geant4-install/include/Geant4/pwdefs.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
-  /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.icc \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PrimaryVertex.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4Allocator.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4AllocatorPool.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PrimaryParticle.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleMomentum.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4Event.hh \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /Users/pablovazquez/geant4-install/include/Geant4/evtdefs.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4HCofThisEvent.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VHitsCollection.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4DCofThisEvent.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VDigiCollection.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4TrajectoryContainer.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VTrajectory.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserEventInformation.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.icc \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4SystemOfUnits.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../stepping/stepping.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4UserSteppingAction.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4Step.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VPhysicalVolume.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/geomdefs.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4RotationMatrix.hh \
@@ -801,6 +765,8 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationX.h \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationY.h \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationY.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/RotationZ.h \
@@ -808,8 +774,15 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/CLHEP/Vector/Rotation.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4GeomSplitter.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/geomwdefs.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4AutoLock.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Threading.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VPhysicalVolume.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4StepPoint.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Allocator.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4AllocatorPool.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4SteppingControl.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4StepStatus.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4TouchableHandle.hh \
@@ -883,14 +856,19 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/trkdefs.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4DynamicParticle.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ElectronOccupancy.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/pwdefs.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4LorentzVector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PDefManager.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleMomentum.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4DynamicParticle.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4TrackStatus.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4Track.icc \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../stepping/../event/event.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../stepping/../event/../run/run.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/../event/event.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/../event/../run/run.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4UserRunAction.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4Run.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4AnalysisManager.hh \
@@ -907,6 +885,7 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4VAnalysisManager.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4HnManager.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4BaseAnalysisManager.hh \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Users/pablovazquez/geant4-install/include/Geant4/G4NtupleBookingManager.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/tools/ntuple_booking \
   /Users/pablovazquez/geant4-install/include/Geant4/tools/cids \
@@ -1025,8 +1004,20 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/tools/vmanip \
   /Users/pablovazquez/geant4-install/include/Geant4/tools/scast \
   /Users/pablovazquez/geant4-install/include/Geant4/tools/sout \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Event.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/evtdefs.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PrimaryVertex.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PrimaryParticle.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4HCofThisEvent.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VHitsCollection.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4DCofThisEvent.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VDigiCollection.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TrajectoryContainer.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VTrajectory.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserEventInformation.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4UserEventAction.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../stepping/../construction/construction.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/../construction/construction.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4SystemOfUnits.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VUserDetectorConstruction.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4NistManager.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ICRU90StoppingData.hh \
@@ -1055,7 +1046,7 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4AnyMethod.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4AnyType.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4PVReplica.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../stepping/../construction/../detector/detector.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/stepping/../construction/../detector/detector.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4CollectionNameVector.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VHit.hh \
@@ -1073,6 +1064,9 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4SubEventTrackStack.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4SubEvent.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4PrimaryTransformer.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4TrackingManager.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4SteppingManager.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4Navigator.hh \
@@ -1170,5 +1164,4 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4RunManagerKernel.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/rundefs.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../event/event.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh

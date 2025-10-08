@@ -8,7 +8,7 @@ MyRunAction::~MyRunAction()
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
-    G4VAnalysisManager *man = G4ToolsAnalysisManager::Instance();
+    G4AnalysisManager *man = G4AnalysisManager::Instance();
 
     G4int runID = run->GetRunID();
     std::stringstream strRunID;
@@ -22,7 +22,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
     man->CreateNtupleDColumn("X");
     man->CreateNtupleDColumn("Y");
     man->CreateNtupleDColumn("Z");
-    man->CreateNtupleDColumn("Wavelength")
+    man->CreateNtupleDColumn("Wavelength");
     man->FinishNtuple(0);
 
     man->CreateNtuple("Hits", "Hits");
@@ -31,6 +31,10 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
     man->CreateNtupleDColumn("Y");
     man->CreateNtupleDColumn("Z");
     man->FinishNtuple(1);
+
+    man->CreateNtuple("Scoring", "Scoring");
+    man->CreateNtupleDColumn("energyDep");
+    man->FinishNtuple(2);
 
 }
 
