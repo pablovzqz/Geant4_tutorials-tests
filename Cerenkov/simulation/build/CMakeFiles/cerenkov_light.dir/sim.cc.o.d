@@ -1148,4 +1148,10 @@ CMakeFiles/cerenkov_light.dir/sim.cc.o: \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ProductionCutsTable.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4MaterialCutsCouple.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ProductionCuts.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4MCCIndexConversionTable.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4MCCIndexConversionTable.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/../action/action.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserActionInitialization.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/../action/../generator/generator.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleGun.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VPrimaryGenerator.hh

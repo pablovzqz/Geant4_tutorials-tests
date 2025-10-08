@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o"
+  "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o.d"
   "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.o"
   "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.o.d"
   "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o"

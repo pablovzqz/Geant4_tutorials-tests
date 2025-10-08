@@ -8,6 +8,7 @@
 
 #include "../construction/construction.hh"
 #include "../physics/physics.hh"
+#include "../action/action.hh"
 
 
 int main(int argc, char** argv){
@@ -16,20 +17,29 @@ int main(int argc, char** argv){
 
     runManager->SetUserInitialization(new MyDetectorConstruction());
     runManager->SetUserInitialization(new MyPhysicsList());
+    runManager->SetUserInitialization(new MyActionInitialization());
     runManager->Initialize();
 
     G4UIExecutive *ui = new G4UIExecutive(argc, argv);
 
-    G4VisManager *visManager = new G4VisExecutive();
+    G4VisManager *visManager = new G4VisExecutive(); 
     visManager->Initialize();
 
     G4UImanager *UIManager = G4UImanager::GetUIpointer();
     UIManager->ApplyCommand("/vis/open OGL");
-    UIManager->ApplyCommand("/vis/viewer/set/background 0 0 0");
-    UIManager->ApplyCommand("/vis/scene/add/trajectories smooth");
-    UIManager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
     UIManager->ApplyCommand("/vis/drawVolume");
-    
+    UIManager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
+    UIManager->ApplyCommand("/vis/viewer/zoom 1.4");
+    UIManager->ApplyCommand("/vis/scene/add/trajectories smooth");
+    UIManager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
+
+    // EJECUTA EVENTOS
+    UIManager->ApplyCommand("/run/beamOn 1");
+
+    // FUERZA EL REFRESCO
+    UIManager->ApplyCommand("/vis/viewer/flush");
+    UIManager->ApplyCommand("/vis/viewer/refresh");
+
     ui->SessionStart();
 
     return 0;

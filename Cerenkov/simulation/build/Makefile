@@ -142,6 +142,30 @@ Simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
 .PHONY : Simulation/fast
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.s
+
 Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.o
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.o
 
@@ -248,6 +272,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Simulation"
 	@echo "... cerenkov_light"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.s"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.s"

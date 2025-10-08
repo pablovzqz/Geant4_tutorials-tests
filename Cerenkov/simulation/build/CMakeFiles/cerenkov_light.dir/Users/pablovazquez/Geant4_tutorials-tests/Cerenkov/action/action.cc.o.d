@@ -1,6 +1,8 @@
-CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o: \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc \
-  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/../generator/generator.hh \
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o: \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserActionInitialization.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/../generator/generator.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleGun.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/globals.hh \
