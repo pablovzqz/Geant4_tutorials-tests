@@ -7,6 +7,11 @@
 #include "G4TouchableHistory.hh"
 #include "G4Track.hh"
 #include "G4StepPoint.hh"
+#include "G4AnalysisManager.hh"
+#include "G4RootAnalysisManager.hh"
+#include "G4RunManager.hh"
+#include "G4SystemOfUnits.hh"
+#include "G4PhysicsOrderedFreeVector.hh"
 
 class MySensitiveDetector : public G4VSensitiveDetector {
 
@@ -15,8 +20,9 @@ public:
   ~MySensitiveDetector() ;
 
 private:
+  virtual G4bool ProcessHits(G4Step* step, G4TouchableHistory* history);
+  G4PhysicsOrderedFreeVector *quEff;
   
-virtual G4bool ProcessHits(G4Step* step, G4TouchableHistory* history);
 
 };
 

@@ -9,6 +9,10 @@ include(${Geant4_USE_FILE})
 file(GLOB MACRO_FILES "${PROJECT_SOURCE_DIR}/*.mac")
 file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
+# Copiar datos
+file(GLOB DAT_FILES "${PROJECT_SOURCE_DIR}/*.dat")
+file(COPY ${DAT_FILES} DESTINATION ${PROJECT_BINARY_DIR})
+
 # Incluir todos los headers de subcarpetas
 file(GLOB_RECURSE HEADERS "${PROJECT_SOURCE_DIR}/*/*.hh")
 set(ALL_INCLUDE_DIRS "")
