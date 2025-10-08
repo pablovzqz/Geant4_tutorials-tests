@@ -30,6 +30,7 @@ int main(int argc, char** argv){
     UIManager->ApplyCommand("/vis/drawVolume");
     UIManager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
     UIManager->ApplyCommand("/vis/viewer/zoom 1.4");
+    UIManager->ApplyCommand("/vis/viewer/update");
     UIManager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UIManager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 
