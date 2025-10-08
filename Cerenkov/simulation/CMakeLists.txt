@@ -1,29 +1,29 @@
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR) ## Minima versión requerida de CMake
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+project(Simulation)
 
-project(Simulation) ## Nombre del proyecto
+# Geant4
+find_package(Geant4 REQUIRED ui_all vis_all)
+include(${Geant4_USE_FILE})
 
-find_package(Geant4 REQUIRED ui_all vis_all) ## paquetes necesarios
+# Copiar macros
+file(GLOB MACRO_FILES "${PROJECT_SOURCE_DIR}/*.mac")
+file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
-include(${Geant4_USE_FILE}) ## files usadas 
-
-file(GLOB_RECURSE HEADER_DIRS
-    RELATIVE ${CMAKE_SOURCE_DIR}
-    "${CMAKE_SOURCE_DIR}/*/*.hh"
-)
-
-foreach(dir ${HEADER_DIRS})
-    get_filename_component(dir_path ${dir} PATH)
-    list(APPEND ALL_INCLUDE_DIRS "${CMAKE_SOURCE_DIR}/${dir_path}")
+# Incluir todos los headers de subcarpetas
+file(GLOB_RECURSE HEADERS "${PROJECT_SOURCE_DIR}/*/*.hh")
+set(ALL_INCLUDE_DIRS "")
+foreach(h ${HEADERS})
+    get_filename_component(dir_path ${h} PATH)
+    list(APPEND ALL_INCLUDE_DIRS ${dir_path})
 endforeach()
-
 include_directories(${ALL_INCLUDE_DIRS})
 
-file(GLOB sources
-    "${PROJECT_SOURCE_DIR}/../*/*.cc"
-)
-file(GLOB_RECURSE HEADER_DIRS "${CMAKE_SOURCE_DIR}/../*/*.hh")
+# Incluir todos los sources de subcarpetas
+file(GLOB_RECURSE SOURCES "/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/*/*.cc")
 
-add_executable(cerenkov_light sim.cc ${sources} ${HEADER_DIRS}) ## nombre del ejecutable y se corre en el archivo.cc
+# Agregar ejecutable
+add_executable(cerenkov_light sim.cc ${SOURCES})
 target_link_libraries(cerenkov_light ${Geant4_LIBRARIES})
 
+# Target custom
 add_custom_target(Simulation DEPENDS cerenkov_light)

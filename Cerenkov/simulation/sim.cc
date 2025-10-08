@@ -20,28 +20,30 @@ int main(int argc, char** argv){
     runManager->SetUserInitialization(new MyActionInitialization());
     runManager->Initialize();
 
-    G4UIExecutive *ui = new G4UIExecutive(argc, argv);
+    G4UIExecutive *ui = 0;
 
+    if (argc == 1) {
+        ui = new G4UIExecutive(argc, argv);
+    }   
+   
     G4VisManager *visManager = new G4VisExecutive(); 
     visManager->Initialize();
 
     G4UImanager *UIManager = G4UImanager::GetUIpointer();
-    UIManager->ApplyCommand("/vis/open OGL");
-    UIManager->ApplyCommand("/vis/drawVolume");
-    UIManager->ApplyCommand("/vis/viewer/set/viewpointVector 1 1 1");
-    UIManager->ApplyCommand("/vis/viewer/zoom 1.4");
-    UIManager->ApplyCommand("/vis/viewer/update");
-    UIManager->ApplyCommand("/vis/scene/add/trajectories smooth");
-    UIManager->ApplyCommand("/vis/scene/endOfEventAction accumulate");
 
-    // EJECUTA EVENTOS
-    UIManager->ApplyCommand("/run/beamOn 1");
-
-    // FUERZA EL REFRESCO
-    UIManager->ApplyCommand("/vis/viewer/flush");
-    UIManager->ApplyCommand("/vis/viewer/refresh");
-
-    ui->SessionStart();
+    if (ui) {
+       
+        UIManager->ApplyCommand("/control/execute vis.mac");
+        
+        ui->SessionStart();
+    }
+    
+    else {
+        G4String command = "/control/execute ";
+        G4String fileName = argv[1];
+        UIManager->ApplyCommand(command+fileName);
+    }
+   
 
     return 0;
 }

@@ -1,0 +1,14 @@
+/vis/open OGL
+/vis/drawVolume
+/vis/viewer/set/viewpointVector 1 1 1
+
+/vis/scene/add/trajectories smooth
+/vis/scene/add/scale 1 m
+/vis/scene/add axes
+/vis/scene/add/eventID
+
+/vis/viewer/zoom 1.4
+/vis/viewer/update
+/vis/viewer/flush
+/vis/viewer/refresh
+
