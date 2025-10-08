@@ -9,7 +9,12 @@ MyRunAction::~MyRunAction()
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
     G4VAnalysisManager *man = G4ToolsAnalysisManager::Instance();
-    man->OpenFile("Cerenkov.root");
+
+    G4int runID = run->GetRunID();
+    std::stringstream strRunID;
+    strRunID<<runID;
+
+    man->OpenFile("Cerenkov" + strRunID.str() + ".root");
     man->CreateNtuple("Hits", "Hits");
     man->CreateNtupleIColumn("eventID");
     man->CreateNtupleDColumn("X");

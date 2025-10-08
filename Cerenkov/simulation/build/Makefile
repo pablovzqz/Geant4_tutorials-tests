@@ -262,6 +262,30 @@ Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.cc.s
+
 sim.o: sim.cc.o
 .PHONY : sim.o
 
@@ -311,6 +335,9 @@ help:
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/run/run.s"
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"

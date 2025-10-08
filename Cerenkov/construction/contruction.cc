@@ -3,31 +3,39 @@
 #include "G4MaterialPropertiesTable.hh"
 
 MyDetectorConstruction::MyDetectorConstruction()
-{}
+{
+    fMessenger = new G4GenericMessenger(this, "/detector/", "Detector constuction");
+
+    fMessenger->DeclareProperty("nCols", Ncols, "Number of columns of the detector array");
+    fMessenger->DeclareProperty("nRows", Nrows, "Number of rows of the detector array");
+
+    Ncols = 100;
+    Nrows = 100;
+
+    defineMaterial();
+}
 
 MyDetectorConstruction::~MyDetectorConstruction()
 {}
 
-G4VPhysicalVolume *MyDetectorConstruction::Construct()
+void MyDetectorConstruction::defineMaterial()
 {
     G4NistManager *nist = G4NistManager::Instance();
-    G4Material *worldMat = nist->FindOrBuildMaterial("G4_AIR");
+    worldMat = nist->FindOrBuildMaterial("G4_AIR");
 
-    G4Material *SiO2 = new G4Material("SiO2", 2.201 * g / cm3, 2);
+    SiO2 = new G4Material("SiO2", 2.201 * g / cm3, 2);
     SiO2->AddElement(nist->FindOrBuildElement("Si"), 1);
     SiO2->AddElement(nist->FindOrBuildElement("O"), 2);
 
-    G4Material *H2O = new G4Material("H2O", 1.000 * g / cm3, 2);
+    H2O = new G4Material("H2O", 1.000 * g / cm3, 2);
     H2O->AddElement(nist->FindOrBuildElement("H"), 2);
     H2O->AddElement(nist->FindOrBuildElement("O"), 1);
 
-    G4Element *C = nist->FindOrBuildElement("C");
-
-
-    G4Material *Aerogel = new G4Material("Aerogel", 0.200 * g / cm3, 3);
+    C = nist->FindOrBuildElement("C");
+    Aerogel = new G4Material("Aerogel", 0.200 * g / cm3, 3);
     Aerogel->AddMaterial(SiO2, 62.5 * perCent);
     Aerogel->AddMaterial(H2O, 37.4 * perCent);
-    Aerogel->AddElement(C, 0.1 * perCent);
+    Aerogel->AddElement(C, 0.1 * perCent);  
 
     G4double energy[2] = {1.239841939 * eV / 0.9, 1.239841939 * eV / 0.2};
     G4double rindexAerogel[2] = {1.1, 1.1};
@@ -35,34 +43,49 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
     G4MaterialPropertiesTable *mptAerogel = new G4MaterialPropertiesTable();
     mptAerogel->AddProperty("RINDEX", energy, rindexAerogel, 2);
-    Aerogel->SetMaterialPropertiesTable(mptAerogel);
 
     G4MaterialPropertiesTable *mptWorld = new G4MaterialPropertiesTable();
     mptWorld->AddProperty("RINDEX", energy, rindexWorld, 2);
+
+    Aerogel->SetMaterialPropertiesTable(mptAerogel);
     worldMat->SetMaterialPropertiesTable(mptWorld);
 
-    G4Box *solidWorld = new G4Box("solidWorld", 0.5 * m, 0.5 * m, 0.5 * m);
-    G4Box *solidRadiator = new G4Box("solidRadiator", 40 * cm, 40 * cm, 1 * cm);
+}
 
-    G4LogicalVolume *LogicWorld = new G4LogicalVolume(solidWorld, worldMat, "LogicWorld");
-    G4LogicalVolume *LogicRadiator = new G4LogicalVolume(solidRadiator, Aerogel, "LogicRadiator");
-
-    G4VPhysicalVolume *PhysWorld = new G4PVPlacement(0, G4ThreeVector(0,0,0), LogicWorld, "PhysWorld", 0, false, 0, true); 
-    G4VPhysicalVolume *PhysRadiator = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.25 * m), LogicRadiator, "PhysRadiator", LogicWorld, false, 0, true); 
-    //El primer 0 denota que no hay rotación, el segundo que no está dentro de otro volumen, habría que poner el nombre del 
-    // volumen madre si lo hubiese. El último 0 es el identificador. El último true comprueba si hay overlaps.
-
-    G4Box *solidDetector = new G4Box("solidDetector", 0.5 * cm, 0.5 * cm, 1 * cm);
+G4VPhysicalVolume *MyDetectorConstruction::Construct()
+{
+    G4double xWorld = 0.5 * m;
+    G4double yWorld = 0.5 * m;
+    G4double zWorld = 0.5 * m;
+    
+    solidWorld = new G4Box("solidWorld", xWorld, yWorld, zWorld);
+    solidRadiator = new G4Box("solidRadiator", 40 * cm, 40 * cm, 1 * cm);
+    
+    LogicWorld = new G4LogicalVolume(solidWorld, worldMat, "LogicWorld");
+    LogicRadiator = new G4LogicalVolume(solidRadiator, Aerogel, "LogicRadiator");
+    
+    PhysWorld = new G4PVPlacement(0, G4ThreeVector(0,0,0), LogicWorld, "PhysWorld", 0, false, 0, true);
+    PhysRadiator = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.25 * m), LogicRadiator, "PhysRadiator", LogicWorld, false, 0, true);
+    
+    // Crear contenedor para el array de detectores
+    G4Box *solidDetectorArray = new G4Box("solidDetectorArray", xWorld, yWorld, 0.01*m);
+    G4LogicalVolume *logicDetectorArray = new G4LogicalVolume(solidDetectorArray, worldMat, "logicDetectorArray");
+    new G4PVPlacement(0, G4ThreeVector(0, 0, 0.48*m), logicDetectorArray, "physDetectorArray", LogicWorld, false, 0, true);
+    
+    // División en filas (Y)
+    G4double cellSizeY = (2.0 * yWorld) / Nrows;
+    G4Box *solidRow = new G4Box("solidRow", xWorld, cellSizeY*0.5, 0.01*m);
+    G4LogicalVolume *logicRow = new G4LogicalVolume(solidRow, worldMat, "logicRow");
+    new G4PVReplica("physRow", logicRow, logicDetectorArray, kYAxis, Nrows, cellSizeY);
+    
+    // División en columnas (X) - detectores finales
+    G4double cellSizeX = (2.0 * xWorld) / Ncols;
+    solidDetector = new G4Box("solidDetector", cellSizeX*0.5, cellSizeY*0.5, 0.01*m);
     logicDetector = new G4LogicalVolume(solidDetector, worldMat, "LogicDetector");
-
-    for (G4int i = 0; i < 100; i++) {
-        for (G4int j = 0; j < 100; j++) {
-            G4VPhysicalVolume *PhysDetector = new G4PVPlacement(0, G4ThreeVector((-0.5*m+(i+0.5)*m/100), (-0.5*m+(j+0.5)*m/100), 0.49*m), logicDetector, "PhysDetector", LogicWorld, false, i * 100 + j, true);
-        }
-    };
-
+    new G4PVReplica("PhysDetector", logicDetector, logicRow, kXAxis, Ncols, cellSizeX);
+    
     return PhysWorld;
-}  
+}
 
 void MyDetectorConstruction::ConstructSDandField()
 {
