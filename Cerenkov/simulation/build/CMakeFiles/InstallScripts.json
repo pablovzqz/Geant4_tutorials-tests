@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

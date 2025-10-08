@@ -1,4 +1,4 @@
-/scratch/pablovzqz/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/cerenkov_light.dir
-/scratch/pablovzqz/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/Simulation.dir
-/scratch/pablovzqz/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/edit_cache.dir
-/scratch/pablovzqz/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/rebuild_cache.dir
+/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/cerenkov_light.dir
+/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/Simulation.dir
+/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/edit_cache.dir
+/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles/rebuild_cache.dir
