@@ -50,9 +50,22 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
     G4VPhysicalVolume *PhysWorld = new G4PVPlacement(0, G4ThreeVector(0,0,0), LogicWorld, "PhysWorld", 0, false, 0, true); 
     G4VPhysicalVolume *PhysRadiator = new G4PVPlacement(0, G4ThreeVector(0, 0, 0.25 * m), LogicRadiator, "PhysRadiator", LogicWorld, false, 0, true); 
     //El primer 0 denota que no hay rotación, el segundo que no está dentro de otro volumen, habría que poner el nombre del 
-    // volumen madre si lo hubiese. El último true comprueba si hay overlaps.
+    // volumen madre si lo hubiese. El último 0 es el identificador. El último true comprueba si hay overlaps.
 
+    G4Box *solidDetector = new G4Box("solidDetector", 0.5 * cm, 0.5 * cm, 1 * cm);
+    logicDetector = new G4LogicalVolume(solidDetector, worldMat, "LogicDetector");
+
+    for (G4int i = 0; i < 100; i++) {
+        for (G4int j = 0; j < 100; j++) {
+            G4VPhysicalVolume *PhysDetector = new G4PVPlacement(0, G4ThreeVector((-0.5*m+(i+0.5)*m/100), (-0.5*m+(j+0.5)*m/100), 0.49*m), logicDetector, "PhysDetector", LogicWorld, false, i * 100 + j, true);
+        }
+    };
 
     return PhysWorld;
-
 }  
+
+void MyDetectorConstruction::ConstructSDandField()
+{
+    MySensitiveDetector *sensDet = new MySensitiveDetector("SensitiveDetector");
+    logicDetector->SetSensitiveDetector(sensDet);
+}

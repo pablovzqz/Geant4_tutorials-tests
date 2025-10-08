@@ -190,6 +190,30 @@ Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
+
 Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o
 
@@ -278,6 +302,9 @@ help:
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.s"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.s"

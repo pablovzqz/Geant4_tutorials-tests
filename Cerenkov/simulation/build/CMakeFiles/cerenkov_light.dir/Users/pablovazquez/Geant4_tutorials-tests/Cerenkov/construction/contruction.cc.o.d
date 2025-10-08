@@ -852,4 +852,51 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4RotationMatrix.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VPhysicalVolume.icc \
   /Users/pablovazquez/geant4-install/include/Geant4/G4LogicalVolume.icc \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PVPlacement.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PVPlacement.hh \
+  /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/../detector/detector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VSensitiveDetector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4CollectionNameVector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4HCofThisEvent.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Allocator.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4AllocatorPool.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VHitsCollection.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Step.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4StepPoint.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4SteppingControl.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4StepStatus.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TouchableHandle.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VTouchable.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TouchableHistory.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationHistory.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4AffineTransform.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4AffineTransform.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationLevel.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationLevelRep.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationLevelRep.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationLevel.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationHistoryPool.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4NavigationHistory.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TouchableHistory.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ReferenceCountedHandle.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4StepPoint.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TrackVector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Step.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Track.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/trkdefs.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4DynamicParticle.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ElectronOccupancy.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/pwdefs.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4LorentzVector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PDefManager.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleDefinition.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleMomentum.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4DynamicParticle.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4TrackStatus.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VUserTrackInformation.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Track.icc \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VHit.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VReadOutGeometry.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4SensitiveVolumeList.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VSDFilter.hh

@@ -114,10 +114,24 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc -o CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o: CMakeFiles/cerenkov_light.dir/flags.make
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o: /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o: CMakeFiles/cerenkov_light.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o -MF CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o.d -o CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o -c /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc
+
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc > CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.i
+
+CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc -o CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.s
+
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o: CMakeFiles/cerenkov_light.dir/flags.make
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o: /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o: CMakeFiles/cerenkov_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o -MF CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o.d -o CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o -c /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc
 
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o: CMakeFiles/cerenkov_light.dir/flags.make
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o: /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o: CMakeFiles/cerenkov_light.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o -MF CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o.d -o CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o -c /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc
 
 CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.i: cmake_force
@@ -147,6 +161,7 @@ cerenkov_light_OBJECTS = \
 "CMakeFiles/cerenkov_light.dir/sim.cc.o" \
 "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o" \
 "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.o" \
+"CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o" \
 "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o" \
 "CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o"
 
@@ -156,6 +171,7 @@ cerenkov_light_EXTERNAL_OBJECTS =
 cerenkov_light: CMakeFiles/cerenkov_light.dir/sim.cc.o
 cerenkov_light: CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/action/action.cc.o
 cerenkov_light: CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.o
+cerenkov_light: CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/detector/detector.cc.o
 cerenkov_light: CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
 cerenkov_light: CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o
 cerenkov_light: CMakeFiles/cerenkov_light.dir/build.make
@@ -198,7 +214,7 @@ cerenkov_light: /Users/pablovazquez/geant4-install/lib/libG4global.dylib
 cerenkov_light: /Users/pablovazquez/geant4-install/lib/libG4clhep.dylib
 cerenkov_light: /Users/pablovazquez/geant4-install/lib/libG4ptl.3.0.0.dylib
 cerenkov_light: CMakeFiles/cerenkov_light.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cerenkov_light"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable cerenkov_light"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cerenkov_light.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
