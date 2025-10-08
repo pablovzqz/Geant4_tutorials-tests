@@ -166,6 +166,54 @@ Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 .PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.cc.s
 
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.cc.s
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.o: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.o
+
+# target to build an object file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.o
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.i: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.i
+
+# target to preprocess a source file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.i
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.i
+
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.s: Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.s
+
+# target to generate assembly for a file
+Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cerenkov_light.dir/build.make CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s
+.PHONY : Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.cc.s
+
 sim.o: sim.cc.o
 .PHONY : sim.o
 
@@ -203,6 +251,12 @@ help:
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.o"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.i"
 	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/construction/contruction.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/generator/generator.s"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.o"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.i"
+	@echo "... Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/physics/physics.s"
 	@echo "... sim.o"
 	@echo "... sim.i"
 	@echo "... sim.s"

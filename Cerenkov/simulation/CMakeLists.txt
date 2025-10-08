@@ -19,8 +19,7 @@ endforeach()
 include_directories(${ALL_INCLUDE_DIRS})
 
 file(GLOB sources
-    "${PROJECT_SOURCE_DIR}/*.cc"
-    "${CMAKE_SOURCE_DIR}/../construction/*.cc"
+    "${PROJECT_SOURCE_DIR}/../*/*.cc"
 )
 file(GLOB_RECURSE HEADER_DIRS "${CMAKE_SOURCE_DIR}/../*/*.hh")
 
