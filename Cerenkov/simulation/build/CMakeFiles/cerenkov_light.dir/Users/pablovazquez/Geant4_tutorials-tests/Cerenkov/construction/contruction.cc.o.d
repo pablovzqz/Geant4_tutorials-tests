@@ -1158,4 +1158,6 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4RunManagerKernel.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/rundefs.hh \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Tubs.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Tubs.icc

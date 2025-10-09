@@ -30,19 +30,27 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction {
         virtual void ConstructSDandField();
 
         G4Box *solidWorld, *solidDetector, *solidRadiator;
-        G4LogicalVolume *LogicWorld, *LogicRadiator;
-        G4VPhysicalVolume *PhysWorld, *PhysRadiator, *PhysDetector;
+        G4Tubs *solidScintillator;
+        G4LogicalVolume *LogicWorld, *LogicRadiator, *LogicScintillator;
+        G4VPhysicalVolume *PhysWorld, *PhysRadiator, *PhysDetector, *PhysScintillator;
 
         G4int Ncols, Nrows;
 
         G4GenericMessenger *fMessenger;
         G4LogicalVolume *fScoringVolume;
     
-        G4Material *SiO2, *H2O, *Aerogel, *worldMat;
-        G4Element *C;
+        G4Material *SiO2, *H2O, *Aerogel, *worldMat, *NaI;
+
+        G4Element *C, *I, *Na;
 
         void defineMaterial();
 
+        void ConstructCerenkov();
+        void ConstructScintillator();
+
+        G4double xWorld, yWorld, zWorld;
+
+        G4bool isCerenkov, isScintillator;
 };
 
 

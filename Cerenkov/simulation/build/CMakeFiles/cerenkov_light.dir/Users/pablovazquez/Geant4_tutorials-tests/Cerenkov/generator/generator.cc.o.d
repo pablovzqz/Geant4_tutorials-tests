@@ -783,4 +783,7 @@ CMakeFiles/cerenkov_light.dir/Users/pablovazquez/Geant4_tutorials-tests/Cerenkov
   /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTableIterator.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleTable.icc \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4SystemOfUnits.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4SystemOfUnits.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Geantino.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4IonTable.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Ions.hh

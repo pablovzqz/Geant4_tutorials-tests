@@ -2,10 +2,21 @@
 /vis/drawVolume
 /vis/viewer/set/viewpointVector 1 1 1
 
+# AÑADE ESTOS COMANDOS CRÍTICOS:
+/vis/scene/create
+/vis/scene/add/volume
 /vis/scene/add/trajectories smooth
+/vis/scene/add/hits
+
+# Para ver partículas secundarias del decaimiento:
+/tracking/storeTrajectory 2
+/vis/scene/endOfEventAction accumulate
+
+# Colores (opcional pero útil):
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+/vis/modeling/trajectories/drawByParticleID-0/set e+ red  
+/vis/modeling/trajectories/drawByParticleID-0/set gamma green
 
 /vis/viewer/zoom 1.4
-/vis/viewer/update
-/vis/viewer/flush
-/vis/viewer/refresh
-
+/vis/viewer/set/autoRefresh true

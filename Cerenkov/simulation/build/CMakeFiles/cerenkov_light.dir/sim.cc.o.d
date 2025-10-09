@@ -1292,4 +1292,7 @@ CMakeFiles/cerenkov_light.dir/sim.cc.o: \
   /Users/pablovazquez/Geant4_tutorials-tests/Cerenkov/simulation/../action/../generator/generator.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
   /Users/pablovazquez/geant4-install/include/Geant4/G4ParticleGun.hh \
-  /Users/pablovazquez/geant4-install/include/Geant4/G4VPrimaryGenerator.hh
+  /Users/pablovazquez/geant4-install/include/Geant4/G4VPrimaryGenerator.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Geantino.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4IonTable.hh \
+  /Users/pablovazquez/geant4-install/include/Geant4/G4Ions.hh
